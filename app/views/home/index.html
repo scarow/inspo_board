@@ -1,0 +1,5 @@
+<% @data[:boards].each do |d| %>
+  <%= d.name %>
+<% end %>
+
+<%= link_to "Create New Board", controller: "boards", action: "new" %>

@@ -1,0 +1,1254 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-08-19 20:00:20 -0700
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 20:06:16 -0700
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2015-08-19 20:06:16 -0700
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 20:06:42 -0700
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2015-08-19 20:06:42 -0700
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-08-19 20:08:21 -0700
+Served asset /rails.png - 200 OK (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-08-19 20:08:23 -0700
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-08-19 20:09:21 -0700
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-08-19 20:09:28 -0700
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-08-19 20:11:00 -0700
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 20:11:17 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.6ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 20:16:30 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:16:34 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (4.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:16:55 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (1.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:19:53 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (1.8ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 20:19:56 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"Test"}, "commit"=>"Save Board"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template boards/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/samanthacarow/Desktop/inspo_board/app/views"
+):
+  app/controllers/boards_controller.rb:12:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 20:21:56 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"Test"}, "commit"=>"Save Board"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template boards/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/samanthacarow/Desktop/inspo_board/app/views"
+):
+  app/controllers/boards_controller.rb:12:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:22:08 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (0.8ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 20:22:12 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"Test"}, "commit"=>"Save Board"}
+Completed 500 Internal Server Error in 0ms
+
+ActionView::MissingTemplate (Missing template boards/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/samanthacarow/Desktop/inspo_board/app/views"
+):
+  app/controllers/boards_controller.rb:12:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:25:19 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (1.2ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:25:21 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (0.7ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 20:25:23 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"asd"}, "commit"=>"Save Board"}
+Completed 404 Not Found in 1ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"home"}):
+  app/controllers/boards_controller.rb:12:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:26:41 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (0.9ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 20:26:42 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (0.7ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 20:26:46 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"asd"}, "commit"=>"Save Board"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 20:26:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 21:29:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 21:29:58 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html (0.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 21:30:01 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test1"}, "commit"=>"Save Board"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `new' for Board:Module):
+  app/controllers/boards_controller.rb:13:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (12.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (26.1ms)[0m  [1mDROP TABLE "board"[0m
+  [1m[35m (2.9ms)[0m  CREATE TABLE "board" ("id" integer NOT NULL, "name" text) 
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+PG::InsufficientPrivilege: ERROR:  permission denied for relation schema_migrations
+: SELECT version FROM "schema_migrations"
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+PG::InsufficientPrivilege: ERROR:  permission denied for relation schema_migrations
+: SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150820045049')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBoards (20150820045050)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150820045050')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045050)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DropBoard (201508200412)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "board"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('201508200412')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045050)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DropBoard (201508200412)
+Migrating to CreateBoards (201508200413)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::DuplicateTable: ERROR:  relation "boards" already exists
+: CREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mDROP TABLE "boards"[0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('201508200413')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DropBoard (201508200412)
+Migrating to CreateBoards (201508200413)
+Migrating to CreateUsers (20150820045049)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DropBoard (201508200413)
+Migrating to CreateBoards (201508200416)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::DuplicateTable: ERROR:  relation "boards" already exists
+: CREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to RedoBoards (20150820045050)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to RedoBoards (20150820045051)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "board"[0m
+PG::UndefinedTable: ERROR:  table "board" does not exist
+: DROP TABLE "board"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to RedoBoards (20150820045051)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "boards"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150820045051')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.1ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (5.4ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820053024)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150820053024')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (20150820)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (20150820)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (20150820)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (117.0ms)[0m  [1mDROP DATABASE IF EXISTS "inspo_board_development"[0m
+  [1m[35m (115.6ms)[0m  DROP DATABASE IF EXISTS "inspo_board_test"
+  [1m[36m (294.9ms)[0m  [1mCREATE DATABASE "inspo_board_development" ENCODING = 'unicode'[0m
+  [1m[35m (238.3ms)[0m  CREATE DATABASE "inspo_board_test" ENCODING = 'unicode'
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (2.8ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150820053024')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150820045049')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150820')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (20150820)
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820053446)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::DuplicateTable: ERROR:  relation "boards" already exists
+: CREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (201508201)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (201508201)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "boards"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('201508201')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150820045049)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (201508201)
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150820045060')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.8ms)[0m  [1mCREATE TABLE "boards" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150820053024')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150820045049')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150820045060')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('201508201')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DestroyBoards (201508201)
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 22:58:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (1.3ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (4.8ms)
+Warning. Error encountered while saving cache /Users/samanthacarow/Desktop/inspo_board/tmp/cache/sass/809e64a66a9b0081d1dcb22ddfb37d03bc6d8e65/boards.css.scssc: can't dump anonymous class #<Class:0x007ffd7b3f2480>
+
+Compiled boards.css  (2ms)  (pid 23564)
+Compiled application.css  (5ms)  (pid 23564)
+Compiled jquery.js  (24ms)  (pid 23564)
+Compiled jquery_ujs.js  (0ms)  (pid 23564)
+Compiled boards.js  (236ms)  (pid 23564)
+Compiled application.js  (274ms)  (pid 23564)
+Completed 200 OK in 326ms (Views: 325.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Served asset /boards.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Served asset /boards.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-19 22:58:31 -0700
+Served asset /application.js - 200 OK (23ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 22:58:34 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test1"}, "commit"=>"Save Board"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.6ms)[0m  INSERT INTO "boards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Thu, 20 Aug 2015 05:58:35 UTC +00:00], ["name", {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test1"}, "commit"=>"Save Board", "action"=>"create", "controller"=>"boards"}], ["updated_at", Thu, 20 Aug 2015 05:58:35 UTC +00:00]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 22:58:35 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 22:59:57 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 23:00:00 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test1"}, "commit"=>"Save Board"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "boards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Thu, 20 Aug 2015 06:00:00 UTC +00:00], ["name", nil], ["updated_at", Thu, 20 Aug 2015 06:00:00 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:00:00 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Served asset /boards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-19 23:00:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 23:00:30 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test3"}, "commit"=>"Save Board"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Thu, 20 Aug 2015 06:00:30 UTC +00:00], ["name", nil], ["updated_at", Thu, 20 Aug 2015 06:00:30 UTC +00:00]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:00:30 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Served asset /boards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-19 23:01:41 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 23:01:46 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test2"}, "commit"=>"Save Board"}
+Completed 500 Internal Server Error in 1ms
+
+TypeError (no implicit conversion of Symbol into String):
+  app/controllers/boards_controller.rb:8:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Served asset /boards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-19 23:03:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 23:03:36 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"test4"}, "commit"=>"Save Board"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Thu, 20 Aug 2015 06:03:36 UTC +00:00], ["name", "test4"], ["updated_at", Thu, 20 Aug 2015 06:03:36 UTC +00:00]]
+  [1m[35m (6.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:03:36 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:09:59 -0700
+Processing by HomeController#index as HTML
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `return_jsonp' for #<HomeController:0x007ffd7b232410>):
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:11:08 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+ERROR: compiling _app_views_home_index_html__394823220136932071_70363335974840 RAISED /Users/samanthacarow/Desktop/inspo_board/app/views/home/index.html:3: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/samanthacarow/Desktop/inspo_board/app/views/home/index.html:5: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_home_index_html__394823220136932071_70363335974840(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new; @data.each do |d| 
+@output_buffer.safe_concat('  ');@output_buffer.append= ( d.name );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:403:in `_run__418355429976478219__process_action__289368748495340655__callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/etag.rb:23:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/conditionalget.rb:25:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3929265244649214598__call__4547215111547067099__callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/methodoverride.rb:21:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/runtime.rb:17:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/lock.rb:15:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/content_length.rb:14:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/handler/webrick.rb:59:in `service'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered home/index.html (2.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/Users/samanthacarow/Desktop/inspo_board/app/views/home/index.html:3: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/samanthacarow/Desktop/inspo_board/app/views/home/index.html:5: syntax error, unexpected end-of-input, expecting keyword_end):
+    1: <% @data.each do |d| %>
+    2:   <%= d.name %>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:403:in `_run__418355429976478219__process_action__289368748495340655__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3929265244649214598__call__4547215111547067099__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:11:23 -0700
+Processing by HomeController#index as HTML
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+  Rendered home/index.html (0.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `name' for [:boards, []]:Array):
+    1: <% @data.each do |d| %>
+    2:   <%= d.name %>
+    3: <% end %>
+  app/views/home/index.html:2:in `block in _app_views_home_index_html__394823220136932071_70363328130420'
+  app/views/home/index.html:1:in `each'
+  app/views/home/index.html:1:in `_app_views_home_index_html__394823220136932071_70363328130420'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:11:43 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (0.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `boards' for {:boards=>[]}:Hash):
+    1: <% @data.boards.each do |d| %>
+    2:   <%= d.name %>
+    3: <% end %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__394823220136932071_70363336562960'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:11:54 -0700
+Processing by HomeController#index as HTML
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+  Rendered home/index.html (0.3ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:11:56 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 23:11:58 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-19 23:11:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-19 23:11:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-19 23:11:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2015-08-19 23:11:59 -0700
+Served asset /boards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-19 23:11:59 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-19 23:11:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 23:12:03 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"Fashion"}, "commit"=>"Save Board"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "boards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Thu, 20 Aug 2015 06:12:03 UTC +00:00], ["name", "Fashion"], ["updated_at", Thu, 20 Aug 2015 06:12:03 UTC +00:00]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:12:03 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:13:08 -0700
+Processing by HomeController#index as HTML
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+  Rendered home/index.html (1.0ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:13:18 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (0.8ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:13:25 -0700
+Processing by HomeController#index as HTML
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+  Rendered home/index.html (1.1ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionController::RoutingError (No route matches {:action=>"boards/new", :controller=>"home"}):
+  app/views/home/index.html:5:in `_app_views_home_index_html__394823220136932071_70363336748360'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:13:36 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (2.3ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/boards/new" for 127.0.0.1 at 2015-08-19 23:13:38 -0700
+
+ActionController::RoutingError (No route matches [POST] "/boards/new"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:14:27 -0700
+Processing by HomeController#index as HTML
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" [0m
+  Rendered home/index.html (0.9ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/boards/new?method=get" for 127.0.0.1 at 2015-08-19 23:14:29 -0700
+
+ActionController::RoutingError (No route matches [POST] "/boards/new"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:15:49 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (0.7ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Processing by BoardsController#new as HTML
+  Rendered boards/new.html within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Served asset /boards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-19 23:15:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-19 23:15:55 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwtdUuZugoQiF8R9wTIHN3WvUFeRnNY2xn80ET+K0VQ=", "board"=>{"name"=>"Tech"}, "commit"=>"Save Board"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boards" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Thu, 20 Aug 2015 06:15:55 UTC +00:00], ["name", "Tech"], ["updated_at", Thu, 20 Aug 2015 06:15:55 UTC +00:00]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 23:15:55 -0700
+Processing by HomeController#index as HTML
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" 
+  Rendered home/index.html (0.3ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)

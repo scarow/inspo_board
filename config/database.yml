@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  database: inspo_board_development
+  encoding: unicode
+  username: samanthacarow
+
+test:
+  adapter: postgresql
+  database: inspo_board_test
+  encoding: unicode
+  username: samanthacarow
+
+production:
+  adapter: postgresql
+  database: inspo_board_production
+  encoding: unicode
