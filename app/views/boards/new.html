@@ -3,6 +3,11 @@
 <%= form_for :board, url: boards_path do |f| %>
   <p>
     <%= f.label :board_name %><br>
+    <div class='error'>
+      <% @errors.each do |error| %>
+        <%= error %>
+      <% end %>
+    </div>
     <%= f.text_field :name %>
   </p>
  
