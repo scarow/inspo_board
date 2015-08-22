@@ -1,6 +1,6 @@
 class AddDeviseToUsers < ActiveRecord::Migration
   def self.up
-    drop_table :users
+    drop_table :users #DO NOT DO THIS IRL; only 'OK' while we set up initial DB config
     create_table :users
     change_table(:users) do |t|
       ## Database authenticatable

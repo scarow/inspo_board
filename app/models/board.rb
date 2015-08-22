@@ -1,4 +1,5 @@
 class Board < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :name, :user_id
   validates :name, presence: true
+  validates :user_id, presence: true
 end
