@@ -6,6 +6,7 @@ class BoardsController < ApplicationController
   def create
     # TODO: perhaps use flash message for error instead
     @board = Board.new(params['board'])
+    @board.user_id = current_user.id
     if @board.save
       redirect_to root_path
     else
