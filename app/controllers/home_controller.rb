@@ -1,4 +1,4 @@
-class HomeController < ActionController::Base
+class HomeController < ApplicationController
 
   def index
     # TODO: change this to be user boards when users get set up
