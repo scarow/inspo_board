@@ -2,6 +2,11 @@ require 'spec_helper'
 require 'rails_helper'
 
 RSpec.describe HomeController, :type => :controller do
+  before(:each) do
+    @user = FactoryGirl.create(:user, email: 'test@test.com')
+    sign_in @user
+  end
+
   describe "index" do
     it "should return correct values belonging to signed in user" do
       # TODO: this should fail as we haven't implemented 

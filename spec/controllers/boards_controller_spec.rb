@@ -2,6 +2,11 @@ require 'spec_helper'
 require 'rails_helper'
 
 RSpec.describe BoardsController, :type => :controller do
+  before(:each) do
+    @user = FactoryGirl.create(:user, email: 'test@test.com')
+    sign_in @user
+  end
+
   describe "POST #create" do
     it "should create board with parameters" do
       params = {

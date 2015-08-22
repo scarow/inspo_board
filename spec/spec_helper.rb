@@ -42,6 +42,15 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  # set up factory_girl
+  require 'factory_girl_rails'
+  FactoryGirl.factories.clear
+  Dir.glob(Rails.root.join("spec", "factories", "*.rb").to_s).each do |f|
+    require f
+  end
+
+  config.include Devise::TestHelpers, :type => :controller
+
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
