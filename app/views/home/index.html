@@ -1,5 +1,7 @@
-<% @data[:boards].each do |d| %>
-  <%= d.name %>
-<% end %>
+<div class="container">
+  <% @data[:boards].each do |d| %>
+    <%= d.name %>
+  <% end %>
 
-<%= link_to "Create New Board", new_board_path %>
+  <%= link_to "Create New Board", new_board_path, class: "btn btn-primary", id: "bs-override" %>
+</div>

@@ -1,4 +1,4 @@
-<%= link_to 'Back', controller: 'home', action: 'index' %>
+<%= link_to 'Back', {controller: 'home', action: 'index'}, { class: "btn btn-primary", id: "bs-override"} %>
 
 <%= form_for :board, url: boards_path do |f| %>
   <p>
