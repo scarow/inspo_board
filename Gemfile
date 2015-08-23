@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'awesome_print', :require => 'ap'
+gem 'carrierwave'
 gem 'devise'
 gem 'jquery-rails'
 gem 'lunchy'
 gem 'pg'
 gem 'rails', '3.2.13'
+gem 'rmagick'
 
 # Gems used only for assets and not required
 # in production environments by default.

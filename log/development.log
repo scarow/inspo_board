@@ -2518,3 +2518,1346 @@ Connecting to database specified by database.yml
   [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150820045060')[0m
   [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150822023152')
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (5.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+Migrating to AddDeviseToUsers (20150822023152)
+Migrating to AddColumnToBoards (20150822023153)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+Migrating to AddDeviseToUsers (20150822023152)
+Migrating to AddColumnToBoards (20150822023153)
+Migrating to AddImagesToBoards (20150822221416)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.9ms)[0m  [1mALTER TABLE "boards" ADD COLUMN "images" array[0m
+PG::SyntaxError: ERROR:  syntax error at or near "array"
+LINE 1: ALTER TABLE "boards" ADD COLUMN "images" array
+                                                 ^
+: ALTER TABLE "boards" ADD COLUMN "images" array
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+Migrating to AddDeviseToUsers (20150822023152)
+Migrating to AddColumnToBoards (20150822023153)
+Migrating to AddImagesToBoards (20150822221416)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "boards" ADD COLUMN "images" array[0m
+PG::SyntaxError: ERROR:  syntax error at or near "array"
+LINE 1: ALTER TABLE "boards" ADD COLUMN "images" array
+                                                 ^
+: ALTER TABLE "boards" ADD COLUMN "images" array
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+Migrating to AddDeviseToUsers (20150822023152)
+Migrating to AddColumnToBoards (20150822023153)
+Migrating to AddImagesToBoards (20150822221626)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (10.4ms)[0m  [1mALTER TABLE "boards" ADD COLUMN "images" text[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150822221626')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20150820045049)
+Migrating to CreateBoards (20150820045060)
+Migrating to AddDeviseToUsers (20150822023152)
+Migrating to AddColumnToBoards (20150822023153)
+Migrating to AddImagesToBoards (20150822221626)
+Migrating to AddImageToBoards (20150822222624)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "boards" ADD COLUMN "image" character varying(255)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20150822222624')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 15:31:02 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (37.0ms)
+Completed 200 OK in 196ms (Views: 100.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:31:05 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/show.html within layouts/application (8.7ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 15:32:49 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fb983d6fe68 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-35114-15z5gz0>>}, "commit"=>"Save Board"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered boards/new.html within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 15:34:13 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (10.6ms)
+Completed 200 OK in 45ms (Views: 15.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:34:15 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/show.html within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 15:34:24 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fb983fdd7e0 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-35114-jlqd5z>>}, "commit"=>"Save Board"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered boards/new.html within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boards" for 127.0.0.1 at 2015-08-22 15:40:07 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for BoardsController):
+  actionpack (3.2.13) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4597628138360563818__call__3823263033841678729__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:40:11 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (9.4ms)
+Completed 200 OK in 35ms (Views: 14.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:40:13 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/show.html within layouts/application (1.4ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/boards/17" for 127.0.0.1 at 2015-08-22 15:40:18 -0700
+
+ActionController::RoutingError (No route matches [POST] "/boards/17"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:43:54 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:43:57 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered boards/show.html within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:45:37 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+ERROR: compiling _app_views_boards_show_html___4159410797732731815_70217405525520 RAISED /Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:3: syntax error, unexpected ':', expecting =>
+...{ :action => "update", :method: 'put' }, html: { multipart: ...
+...                               ^
+/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:3: syntax error, unexpected '}', expecting keyword_end
+...n => "update", :method: 'put' }, html: { multipart: true } d...
+...                               ^
+/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...}, html: { multipart: true } do |f| @output_buffer.safe_conc...
+...                               ^
+/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:14: syntax error, unexpected keyword_ensure, expecting end-of-input
+Function body:           def _app_views_boards_show_html___4159410797732731815_70217405525520(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "boards/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append= ( link_to 'Back', {controller: 'home', action: 'index'}, { class: "btn btn-primary", id: "bs-override"} );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append=  form_for :board, :url => { :action => "update", :method: 'put' }, html: { multipart: true } do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <p>
+    ');@output_buffer.append= ( f.file_field :image );@output_buffer.safe_concat('<br>
+  </p>
+ 
+  <p>
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+'); end 
+@output_buffer.safe_concat('
+Upload Button');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:425:in `_run__3395494173827861656__process_action__3932154025032940832__callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/etag.rb:23:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/conditionalget.rb:25:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__4597628138360563818__call__3823263033841678729__callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/methodoverride.rb:21:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/runtime.rb:17:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/lock.rb:15:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/content_length.rb:14:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/rack-1.4.7/lib/rack/handler/webrick.rb:59:in `service'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered boards/show.html within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:3: syntax error, unexpected ':', expecting =>
+...{ :action => "update", :method: 'put' }, html: { multipart: ...
+...                               ^
+/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:3: syntax error, unexpected '}', expecting keyword_end
+...n => "update", :method: 'put' }, html: { multipart: true } d...
+...                               ^
+/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:3: syntax error, unexpected keyword_do_block, expecting keyword_end
+...}, html: { multipart: true } do |f| @output_buffer.safe_conc...
+...                               ^
+/Users/samanthacarow/Desktop/inspo_board/app/views/boards/show.html:14: syntax error, unexpected keyword_ensure, expecting end-of-input):
+    1: <%= link_to 'Back', {controller: 'home', action: 'index'}, { class: "btn btn-primary", id: "bs-override"} %>
+    2: 
+    3: <%= form_for :board, :url => { :action => "update", :method: 'put' }, html: { multipart: true } do |f| %>
+    4:   <p>
+    5:     <%= f.file_field :image %><br>
+    6:   </p>
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:425:in `_run__3395494173827861656__process_action__3932154025032940832__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4597628138360563818__call__3823263033841678729__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered boards/show.html within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Served asset /bootstrap.min.css - 200 OK (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Served asset /application.css - 200 OK (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Served asset /boards.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Served asset /bootstrap.min.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:45:44 -0700
+Served asset /application.js - 200 OK (5ms)
+
+
+Started POST "/boards/17?method=put" for 127.0.0.1 at 2015-08-22 15:45:49 -0700
+
+ActionController::RoutingError (No route matches [POST] "/boards/17"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:48:12 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (7.1ms)
+Completed 200 OK in 33ms (Views: 12.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:48:12 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:48:14 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "17"]]
+  Rendered boards/show.html within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/boards/17" for 127.0.0.1 at 2015-08-22 15:48:24 -0700
+
+ActionController::RoutingError (No route matches [POST] "/boards/17"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:49:00 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:49:02 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "17"]]
+  Rendered boards/show.html within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 15:51:23 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (7.4ms)
+Completed 200 OK in 35ms (Views: 12.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Served asset /bootstrap.min.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 15:51:24 -0700
+Served asset /boards.js - 200 OK (0ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 15:51:26 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "17"]]
+  Rendered boards/show.html within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 15:51:29 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-22 15:51:39 -0700
+Processing by BoardsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/new.html within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 15:51:49 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"name"=>"Sam Test Board", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb983d754f8 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-35114-1s2l7ph>>}, "commit"=>"Save Board"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "boards" ("created_at", "image", "images", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Sat, 22 Aug 2015 22:51:49 UTC +00:00], ["image", "men1.jpg"], ["images", nil], ["name", "Sam Test Board"], ["updated_at", Sat, 22 Aug 2015 22:51:49 UTC +00:00], ["user_id", 2]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 15:51:49 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 15:51:51 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", "19"]]
+  Rendered boards/show.html within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", "19"]]
+  Rendered boards/show.html within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:06:23 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 16:49:10 -0700
+
+LoadError (cannot load such file -- RMagick):
+  app/uploaders/image_uploader.rb:6:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/board.rb:9:in `<class:Board>'
+  app/models/board.rb:4:in `<top (required)>'
+  app/controllers/boards_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 16:49:29 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered boards/show.html within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= link_to 'Back', {controller: 'home', action: 'index'}, { class: "btn btn-primary", id: "bs-override"} %>
+    2: 
+    3: <%= @board.name %>
+    4: <%= image_tag @board.image_url.to_s %>
+  app/views/boards/show.html:3:in `_app_views_boards_show_html___4159410797732731815_70217364262720'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/boards/17" for 127.0.0.1 at 2015-08-22 16:49:43 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/show.html within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= link_to 'Back', {controller: 'home', action: 'index'}, { class: "btn btn-primary", id: "bs-override"} %>
+    2: 
+    3: <%= @board.name %>
+    4: <%= image_tag @board.image_url.to_s %>
+  app/views/boards/show.html:3:in `_app_views_boards_show_html___4159410797732731815_70217364262720'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/boards" for 127.0.0.1 at 2015-08-22 16:49:47 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for BoardsController):
+  actionpack (3.2.13) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4597628138360563818__call__3823263033841678729__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/samanthacarow/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:49:59 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (9.1ms)
+Completed 200 OK in 169ms (Views: 67.6ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:49:59 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:49:59 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:49:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:49:59 -0700
+Served asset /boards.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:49:59 -0700
+Served asset /application.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:00 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:50:00 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "19"]]
+  Rendered boards/show.html within layouts/application (5.6ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:50:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 16:50:17 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "19"]]
+  Rendered boards/show.html within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `scale' for "/uploads/board/image/19/men1.jpg":String):
+    1: <%= link_to 'Back', {controller: 'home', action: 'index'}, { class: "btn btn-primary", id: "bs-override"} %>
+    2: 
+    3: <%= @board.name %>
+    4: <%= image_tag @board.image_url.scale(250, 250).to_s %>
+  app/views/boards/show.html:4:in `_app_views_boards_show_html___1359889204086950329_70322675458420'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/boards/19" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "19"]]
+  Rendered boards/show.html within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:50:50 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 16:55:31 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (8.7ms)
+Completed 200 OK in 74ms (Views: 13.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:55:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:55:32 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:32 -0700
+Served asset /boards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:32 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 16:55:33 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:55:34 -0700
+Served asset /bootstrap.min.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:55:34 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:34 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:34 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:34 -0700
+Served asset /boards.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:55:34 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-22 16:55:36 -0700
+Processing by BoardsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/new.html within layouts/application (8.4ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 16:55:46 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"name"=>"Test 2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fea88c1c7d8 @original_filename="shoes.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"shoes.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-38516-d1l8hf>>}, "commit"=>"Save Board"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "boards" ("created_at", "image", "images", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Sat, 22 Aug 2015 23:55:46 UTC +00:00], ["image", "shoes.jpg"], ["images", nil], ["name", "Test 2"], ["updated_at", Sat, 22 Aug 2015 23:55:46 UTC +00:00], ["user_id", 2]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 49ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:55:46 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/20" for 127.0.0.1 at 2015-08-22 16:55:48 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", "20"]]
+  Rendered boards/show.html within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 16:56:46 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (8.1ms)
+Completed 200 OK in 36ms (Views: 12.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Served asset /bootstrap.min.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Served asset /boards.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 16:56:48 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-22 16:56:49 -0700
+Processing by BoardsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered boards/new.html within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 16:56:55 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"name"=>"Test 3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fea893876a8 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-38516-1uc833u>>}, "commit"=>"Save Board"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boards" ("created_at", "image", "images", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Sat, 22 Aug 2015 23:56:55 UTC +00:00], ["image", "men1.jpg"], ["images", nil], ["name", "Test 3"], ["updated_at", Sat, 22 Aug 2015 23:56:55 UTC +00:00], ["user_id", 2]]
+  [1m[35m (5.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:56:55 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/21" for 127.0.0.1 at 2015-08-22 16:56:57 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "21"]]
+  Rendered boards/show.html within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 16:58:04 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (7.6ms)
+Completed 200 OK in 35ms (Views: 12.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-22 16:58:05 -0700
+Processing by BoardsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered boards/new.html within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 16:58:12 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"name"=>"Test 4", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fea8917e8e8 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-38516-3ccktn>>}, "commit"=>"Save Board"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "boards" ("created_at", "image", "images", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Sat, 22 Aug 2015 23:58:12 UTC +00:00], ["image", "men1.jpg"], ["images", nil], ["name", "Test 4"], ["updated_at", Sat, 22 Aug 2015 23:58:12 UTC +00:00], ["user_id", 2]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 16:58:12 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-22 16:58:36 -0700
+Processing by BoardsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered boards/new.html within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 6.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 16:58:44 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"name"=>"Tast 5", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fea8a208e20 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-38516-1moklmz>>}, "commit"=>"Save Board"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/boards_controller.rb:14:in `create'
+
+
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/samanthacarow/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 17:05:52 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2[0m
+  Rendered home/index.html within layouts/application (7.4ms)
+Completed 200 OK in 32ms (Views: 11.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2015-08-22 17:05:54 -0700
+Processing by BoardsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered boards/new.html within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2015-08-22 17:06:00 -0700
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BrwgUFnn4UwGhxLAybsaRVCjtj+csipXPu+j7MYr2Ew=", "board"=>{"name"=>"Test 5", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fea8a1e35a8 @original_filename="men1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"board[image]\"; filename=\"men1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/mc/h8rr6cdd41l9hl87h88830240000gn/T/RackMultipart20150822-38516-1gcoecf>>}, "commit"=>"Save Board"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boards" ("created_at", "image", "images", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Sun, 23 Aug 2015 00:06:00 UTC +00:00], ["image", "men1.jpg"], ["images", nil], ["name", "Test 5"], ["updated_at", Sun, 23 Aug 2015 00:06:00 UTC +00:00], ["user_id", 2]]
+  [1m[35m (5.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-22 17:06:00 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/23" for 127.0.0.1 at 2015-08-22 17:06:02 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "23"]]
+  Rendered boards/show.html within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 17:07:09 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (8.9ms)
+Completed 200 OK in 33ms (Views: 13.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."user_id" = 2
+  Rendered home/index.html within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Served asset /bootstrap.min.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/boards.js?body=1" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Served asset /boards.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-22 17:07:26 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/boards/20" for 127.0.0.1 at 2015-08-22 17:07:28 -0700
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT 1  [["id", "20"]]
+  Rendered boards/show.html within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.4ms)

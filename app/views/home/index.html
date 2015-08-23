@@ -1,7 +1,11 @@
 <div class="container">
-  <% @data[:boards].each do |d| %>
-    <%= d.name %>
-  <% end %>
+  <ul>
+    <% @data[:boards].each do |d| %>
+      <li>
+        <%= link_to d.name, d %>
+      </li>
+    <% end %>
+  </ul>
 
   <%= link_to "Create New Board", new_board_path, class: "btn btn-primary", id: "bs-override" %>
 </div>
